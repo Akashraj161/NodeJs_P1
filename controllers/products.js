@@ -11,4 +11,5 @@ const getAllProductTesting = async(req,res)=>{
     res.status(200).json({myData});
 };
 
+
 module.exports = {getAllProducts,getAllProductTesting};
