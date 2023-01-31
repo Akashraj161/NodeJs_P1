@@ -1,11 +1,14 @@
 //Defining all the routes.
+const Product = require("../models/product")
 
 const getAllProducts = async(req,res)=>{
-    res.status(200).json({msg:"I am getAllProduct"});
+    const myData = await Product.find({});
+    res.status(200).json({myData});
 };
 
 const getAllProductTesting = async(req,res)=>{
-    res.status(200).json({msg:"I am getAllProductTesting"});
+    const myData = await Product.find({company: "apple"});
+    res.status(200).json({myData});
 };
 
 module.exports = {getAllProducts,getAllProductTesting};

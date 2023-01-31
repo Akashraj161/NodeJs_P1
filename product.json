@@ -1,0 +1,69 @@
+[
+    {
+        "name": "iphone9",
+        "price":150,
+        "feature" : "true",
+        "company":"apple"
+    },
+    {
+        "name": "iphoneX",
+        "price":180,
+        "feature" : "true",
+        "company":"apple"
+    },
+    {
+        "name": "Samsung Galaxy S23",
+        "price":350,
+        "feature" : "true",
+        "company":"samsung"
+    },
+    {
+        "name": "apple watch",
+        "price":120,
+        "feature" : "true",
+        "company":"apple"
+    },
+    {
+        "name": "Galaxy watch",
+        "price":90,
+        "company":"samsung"
+    },
+    {
+        "name": "Vastro",
+        "price":130,
+        "feature" : "true",
+        "company":"dell"
+    },
+    {
+        "name": "Mi Note 12 pro",
+        "price":120,
+        "company":"mi"
+    },
+    {
+        "name": "Dell inspiron",
+        "price":110,
+        "company":"dell"
+    },
+    {
+        "name": "Mi watch",
+        "price":70,
+        "company":"mi"
+    },
+    {
+        "name": "iphone 14 proMax",
+        "price":450,
+        "company":"apple"
+    },
+    {
+        "name": "ipad pro",
+        "price":220,
+        "feature" : "true",
+        "company":"apple"
+    },
+    {
+        "name": "Samsung Bud pro",
+        "price":120,
+        "feature" : "true",
+        "company":"samsung"
+    }
+]
