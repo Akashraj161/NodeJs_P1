@@ -2,25 +2,25 @@
     {
         "name": "iphone9",
         "price":150,
-        "feature" : "true",
+        "featured" : "true",
         "company":"apple"
     },
     {
         "name": "iphoneX",
         "price":180,
-        "feature" : "true",
+        "featured" : "true",
         "company":"apple"
     },
     {
         "name": "Samsung Galaxy S23",
         "price":350,
-        "feature" : "true",
+        "featured" : "true",
         "company":"samsung"
     },
     {
         "name": "apple watch",
         "price":120,
-        "feature" : "true",
+        "featured" : "true",
         "company":"apple"
     },
     {
@@ -31,7 +31,7 @@
     {
         "name": "Vastro",
         "price":130,
-        "feature" : "true",
+        "featured" : "true",
         "company":"dell"
     },
     {
@@ -57,13 +57,13 @@
     {
         "name": "ipad pro",
         "price":220,
-        "feature" : "true",
+        "featured" : "true",
         "company":"apple"
     },
     {
         "name": "Samsung Bud pro",
         "price":120,
-        "feature" : "true",
+        "featured" : "true",
         "company":"samsung"
     }
 ]
