@@ -3,7 +3,7 @@ const Product = require("../models/product")
 
 const getAllProducts = async(req,res)=>{
 
-    const {company , name } = req.query;
+    const {company , name , sort , select } = req.query;
     const queryObject = {};
 
     if(company){
@@ -14,13 +14,27 @@ const getAllProducts = async(req,res)=>{
         queryObject.name = { $regex : name , $options : "i"};
     }
 
+    let apiData = Product.find(queryObject);
+     
+    if(sort){
+        //let sortUrlFix = sort.replace(","," ");
+        let sortUrlFix = sort.split(",").join(" ");
+        // console.log(sortUrlFix);
+        apiData = apiData.sort(sortUrlFix);
+    }
+    if(select){
+        //let sortUrlFix = sort.replace(","," ");
+        let selectUrlFix = select.split(",").join(" ");
+        // console.log(sortUrlFix);
+        apiData = apiData.select(selectUrlFix);
+    }
 
-    const myData = await Product.find(queryObject);
+    const myData = await apiData;
     res.status(200).json({myData});
 };
 
 const getAllProductTesting = async(req,res)=>{
-    const myData = await Product.find({company: "apple"});
+    const myData = await Product.find({}).select("name")
     res.status(200).json({myData});
 };
 
